@@ -1,0 +1,22 @@
+{
+  "name": "tchecker-tm",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/dmitryt/tchecker-tm",
+  "author": "Dmitry Tselinko <dmitry.tselinko@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "node index.js",
+    "start-dev": "nodemon index.js"
+  },
+  "dependencies": {
+    "dotenv": "^4.0.0",
+    "node-persist": "^2.1.0",
+    "request-promise": "^4.2.1",
+    "telegram-node-bot": "^4.0.5"
+  },
+  "devDependencies": {
+    "eslint": "^4.2.0",
+    "nodemon": "^1.11.0"
+  }
+}
