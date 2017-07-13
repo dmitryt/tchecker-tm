@@ -10,16 +10,15 @@ require('dotenv').config();
 
 storage.initSync();
 
+const TOKEN= '418496838:AAFNTQQCQVm85WCf8XukkS8xccCJSiFfVbY';
 
-const {TOKEN, HOST, PORT} = process.env;
+const tg = new Telegram(TOKEN);
 
-const tg = new Telegram(TOKEN, {
-  // webhook: {
+// webhook: {
   //   url: 'https://35bf7e0a.ngrok.io/monitor',
   //   port: PORT,
   //   host: HOST
   // }
-});
 
 const controller = new Controller(storage);
 tg.router

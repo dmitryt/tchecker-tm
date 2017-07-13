@@ -1,8 +1,10 @@
 const {TelegramBaseController} = require('telegram-node-bot');
 const rp = require('request-promise');
 
-const {SERVICE_HOST, URL_CITIES, URL_TICKETS} = process.env;
 const REQUEST_INTERVAL = 10 * 1000; //10s
+const SERVICE_HOST='https://booking.uz.gov.ua';
+const URL_CITIES='purchase/station/';
+const URL_TICKETS='purchase/search/';
 
 const getTerms = $ => $.message.text.split(/\s+/).slice(1);
 
