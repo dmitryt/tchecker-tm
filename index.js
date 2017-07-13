@@ -14,11 +14,11 @@ storage.initSync();
 const {TOKEN, HOST, PORT} = process.env;
 
 const tg = new Telegram(TOKEN, {
-  webhook: {
-    url: 'https://35bf7e0a.ngrok.io/monitor',
-    port: PORT,
-    host: HOST
-  }
+  // webhook: {
+  //   url: 'https://35bf7e0a.ngrok.io/monitor',
+  //   port: PORT,
+  //   host: HOST
+  // }
 });
 
 const controller = new Controller(storage);
